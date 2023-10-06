@@ -1,0 +1,177 @@
+/* Write CSS Here */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {	
+	display: flex;
+	/*
+	justify-content: center;
+	align-items: center;
+	*/
+}
+.full {
+	display: grid;
+}
+
+.left {
+	background-image: url('CV_Background2.jpeg');
+	background-size: 100% 100%;
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+  }
+  
+.left a {
+padding: 8px 8px 10px;
+text-decoration: none;
+font-size: 15px;
+color: #ffffff;
+display: inline-flex;
+transition: 0.3s;
+}
+
+.left .Contact, .left .Skills {
+	color: rgb(255, 255, 255);
+}
+
+.left .closebtn {
+	color: #000000;
+}
+
+.Projects div{
+  width: 560px;
+  padding: 10px;
+  background-color: #4f81cc;
+  border: 1px solid rgb(0, 0, 0);
+  margin: 0;
+}
+
+.Projects iframe{
+	border: 1px solid rgb(0, 0, 0);
+}
+
+.Projects a, .Projects h3{
+	color: whitesmoke;
+}
+
+.Education a{
+	color: rgb(0, 132, 255);
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+	.sidebar {padding-top: 15px;}
+	.sidebar a {font-size: 18px;}
+  }
+
+.right {
+	background-image: url('CV_Background2.jpeg');
+	background-size: 100% 100%;
+	position: initial;
+	/* background-color: #84A4FC; */
+	padding: 20px;
+}
+
+.profile_image {
+	margin-bottom: 30px;
+	margin-left: 40px;
+}
+
+.Contact, .Skills, .Language, .Hobbies, .title,
+.Summary, .Employment, .Education, .Volunteer_Experience, .Scholarships, .Projects, .Hobbies {
+	margin-bottom: 30px;
+}
+
+.Summary h2, .Employment h2, .Education h2, .Volunteer_Experience h2, .Scholarships h2, .Projects h2, .Hobbies h2 {
+	color: rgb(246, 246, 8);
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	margin-bottom: 20px;
+}
+
+.Summary p, .Employment p, .Education p, .Volunteer_Experience p, .Scholarships p, .Projects p, .Hobbies p {
+	color: rgb(255, 255, 255);
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	margin-bottom: 20px;
+}
+
+.Contact h2, .Skills h2 {
+	color: rgb(246, 246, 8);
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 130%;
+	margin-bottom: 10px;
+}
+
+.right h1{
+	font-weight: 200;
+	font-family:"Avenir Next", Calibri, Verdana, sans-serif;
+	text-align: center;
+}
+
+.title p{
+	text-align: center;
+}
+
+.left a:hover {
+	color: #f1f1f1;
+  }
+  
+.left .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+}
+
+.openbtn {
+font-family: 'Tahoma', sans-serif;
+font-size: 20px;
+cursor: pointer;
+background-color: #fFF;
+color: #659DBD;
+padding: 10px 15px;
+border: none;
+border-radius: 50px;
+}
+
+.openbtn:hover {
+background-color: #575757;
+}
+
+#right {
+transition: margin-left .5s;
+padding: 16px;
+}
+
+.name {
+	font-size: larger;
+}
+
+.name, .title {
+	color: white;
+	background-image: url('CV_Background.jpeg');
+	background-size: cover;
+	border: 1px solid rgb(0, 0, 0);
+}
+
+.title .clock, .title .date{
+	color: rgb(255, 255, 255);
+}
+
+/* Clock */
+.clock, .date {
+    color: #000000;
+    font-size: 20px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+	text-align: center;
+}
